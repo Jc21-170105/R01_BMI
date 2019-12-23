@@ -25,8 +25,8 @@ namespace R01_BMI
             double w=double.Parse(x);
             double a=double.Parse(y);
 
-            double k=a/(w/100*w/100);
-            double ss=Math.Round(a,MidpointRounding.AwayFromZero);
+            double k=a/(w/100 * w/100);
+            double ss=Math.Round(k,MidpointRounding.AwayFromZero);
             kotae.Text="BMI:"+ss;
 
         }
