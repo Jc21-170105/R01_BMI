@@ -15,7 +15,20 @@ namespace R01_BMI
     {
         public MainPage()
         {
+
             InitializeComponent();
+        }
+        private void Button_Clicked(object sender, EventArgs e){
+        
+            String x=sintyou.Text;
+            String y=taizyuu.Text;
+            double w=double.Parse(x);
+            double a=double.Parse(y);
+
+            double k=a/(w/100*w/100);
+            double ss=Math.Round(a,MidpointRounding.AwayFromZero);
+            kotae.Text="BMI:"+ss;
+
         }
     }
 }
